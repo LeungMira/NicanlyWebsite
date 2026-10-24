@@ -1,0 +1,390 @@
+/* ==========================================================================
+   NICANLY EQUIPMENT WHOLESALING — INDUSTRIAL B2B DESIGN SYSTEM (styles.css)
+   ========================================================================== */
+
+:root {
+    --nicanly-orange: #C8640A;
+    --nicanly-amber: #E87A14;
+    --nicanly-gold: #F59E0B;
+    --nicanly-dark: #0E1013;
+    --nicanly-surface: #15181E;
+    --nicanly-charcoal: #1C2028;
+    --nicanly-steel: #282E38;
+    --nicanly-border: rgba(255, 255, 255, 0.08);
+    --nicanly-border-accent: rgba(232, 122, 20, 0.35);
+    --text-primary: #F3F4F6;
+    --text-secondary: #9CA3AF;
+    --text-muted: #6B7280;
+    --font-display: 'Chakra Petch', sans-serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Base Reset & Typography */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--nicanly-dark);
+}
+
+body {
+    background-color: var(--nicanly-dark);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Architectural Blueprint Grid with Subtle Vignette */
+.industrial-grid {
+    background-color: var(--nicanly-dark);
+    background-size: 48px 48px;
+    background-image:
+        linear-gradient(to right, rgba(200, 100, 10, 0.045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(200, 100, 10, 0.045) 1px, transparent 1px);
+}
+
+/* Top Industrial Hazard Stripe Accent */
+.hazard-border {
+    height: 5px;
+    width: 100%;
+    background: repeating-linear-gradient(
+        -45deg,
+        var(--nicanly-orange),
+        var(--nicanly-orange) 14px,
+        #111317 14px,
+        #111317 28px
+    );
+    border-bottom: 1px solid rgba(232, 122, 20, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--nicanly-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--nicanly-orange);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--nicanly-amber);
+}
+
+/* Navigation & Header Glassmorphism */
+.site-header {
+    background: rgba(14, 16, 19, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--nicanly-border);
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+    color: #D1D5DB;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--nicanly-orange), var(--nicanly-gold));
+    transition: width 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Logo & SVG Animations */
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        filter: drop-shadow(0 0 8px rgba(200, 100, 10, 0.35));
+    }
+    50% {
+        filter: drop-shadow(0 0 18px rgba(232, 122, 20, 0.75));
+    }
+}
+
+@keyframes subtleFloat {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.animate-spin-slow {
+    animation: spinSlow 32s linear infinite;
+    transform-origin: 50px 50px;
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 3.5s ease-in-out infinite;
+}
+
+.animate-float {
+    animation: subtleFloat 5s ease-in-out infinite;
+}
+
+.excavator-arm {
+    transform-origin: 48px 46px;
+    transition: transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.logo-container:hover .excavator-arm {
+    transform: rotate(-14deg);
+}
+
+/* Hero Section Styling */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0.875rem;
+    border-radius: 9999px;
+    background: rgba(200, 100, 10, 0.12);
+    border: 1px solid rgba(232, 122, 20, 0.35);
+    color: var(--nicanly-amber);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.hero-emblem-card {
+    background: linear-gradient(165deg, rgba(28, 32, 40, 0.95) 0%, rgba(15, 17, 21, 0.98) 100%);
+    border: 1px solid rgba(232, 122, 20, 0.3);
+    box-shadow:
+        0 25px 50px -12px rgba(0, 0, 0, 0.7),
+        0 0 40px -10px rgba(200, 100, 10, 0.15),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-emblem-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--nicanly-amber), transparent);
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--nicanly-orange) 0%, var(--nicanly-amber) 100%);
+    color: #FFFFFF;
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    box-shadow: 0 10px 25px -5px rgba(200, 100, 10, 0.35);
+    transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--nicanly-amber) 0%, var(--nicanly-gold) 100%);
+    box-shadow: 0 15px 30px -5px rgba(232, 122, 20, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    background: rgba(28, 32, 40, 0.85);
+    color: #E5E7EB;
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+    background: rgba(40, 46, 56, 0.95);
+    border-color: var(--nicanly-amber);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+/* Catalog Filter Pills */
+.filter-btn {
+    padding: 0.5rem 1.125rem;
+    border-radius: 0.625rem;
+    font-family: var(--font-display);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: var(--nicanly-surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--nicanly-border);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    color: #FFFFFF;
+    border-color: rgba(232, 122, 20, 0.4);
+}
+
+.filter-btn.active {
+    background: rgba(200, 100, 10, 0.18);
+    color: var(--nicanly-gold);
+    border-color: var(--nicanly-amber);
+    box-shadow: 0 0 15px rgba(200, 100, 10, 0.2);
+}
+
+/* Catalog Equipment Cards */
+.catalog-card {
+    background: linear-gradient(180deg, rgba(28, 32, 40, 0.85) 0%, rgba(21, 24, 30, 0.95) 100%);
+    border: 1px solid var(--nicanly-border);
+    border-radius: 1rem;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.catalog-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--nicanly-orange), var(--nicanly-gold));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.catalog-card:hover {
+    border-color: rgba(232, 122, 20, 0.55);
+    transform: translateY(-4px);
+    box-shadow:
+        0 20px 35px -10px rgba(0, 0, 0, 0.6),
+        0 0 25px -5px rgba(200, 100, 10, 0.18);
+}
+
+.catalog-card:hover::after {
+    opacity: 1;
+}
+
+.catalog-order-btn {
+    background: rgba(14, 16, 19, 0.9);
+    color: #FFFFFF;
+    border: 1px solid rgba(200, 100, 10, 0.45);
+    transition: all 0.25s ease;
+}
+
+.catalog-card:hover .catalog-order-btn {
+    background: linear-gradient(135deg, var(--nicanly-orange) 0%, var(--nicanly-amber) 100%);
+    border-color: var(--nicanly-gold);
+    box-shadow: 0 8px 20px -4px rgba(200, 100, 10, 0.4);
+}
+
+/* Process / Why Nicanly Cards */
+.process-card {
+    background: rgba(21, 24, 30, 0.8);
+    border: 1px solid var(--nicanly-border);
+    border-radius: 1rem;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.process-card:hover {
+    border-color: rgba(232, 122, 20, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Order Form Styling */
+.order-portal-card {
+    background: linear-gradient(180deg, #161920 0%, #101217 100%);
+    border: 1px solid rgba(232, 122, 20, 0.4);
+    box-shadow:
+        0 25px 50px -12px rgba(0, 0, 0, 0.75),
+        0 0 35px -8px rgba(200, 100, 10, 0.15);
+}
+
+.form-input {
+    width: 100%;
+    background-color: #0E1014;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.form-input::placeholder {
+    color: #6B7280;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--nicanly-amber);
+    background-color: #12151B;
+    box-shadow: 0 0 0 3px rgba(232, 122, 20, 0.15);
+}
+
+.form-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #D1D5DB;
+    margin-bottom: 0.4rem;
+}
+
+/* Highlight flash when form is auto-filled from catalog */
+@keyframes highlightPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(232, 122, 20, 0.85);
+        border-color: var(--nicanly-gold);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(232, 122, 20, 0);
+        border-color: var(--nicanly-orange);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(232, 122, 20, 0);
+    }
+}
+
+.form-flash {
+    animation: highlightPulse 1.25s ease-out;
+}

@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicanly Equipment Wholesaling | Solar Panels &amp; LED Street Lights</title>
+    <meta name="description" content="Wholesale supplier of solar panels and LED street lights.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Industrial & Clean Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nicanly: {
+                            orange: '#C8640A',
+                            amber: '#E87A14',
+                            gold: '#F59E0B',
+                            dark: '#0E1013',
+                            surface: '#15181E',
+                            charcoal: '#1C2028',
+                            steel: '#282E38'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"Chakra Petch"', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- External Custom Design Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="industrial-grid antialiased selection:bg-nicanly-orange selection:text-white">
+
+    <!-- Top Hazard Accent Bar -->
+    <div class="hazard-border"></div>
+
+    <!-- Top Utility Bar -->
+    <div class="bg-black/60 border-b border-white/10 text-xs text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center justify-between">
+            <div class="flex items-center gap-4 sm:gap-6">
+                <a href="mailto:nicanlywholesale@gmail.com"
+                    class="hover:text-nicanly-amber transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-nicanly-amber"></i>
+                    <span class="font-medium text-gray-300">nicanlywholesale@gmail.com</span>
+                </a>
+                <span class="text-white/20">|</span>
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-clock text-nicanly-amber"></i>
+                    <span class="text-gray-300">Active Hours: 8 AM to 8 PM</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 site-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Emblem & Wordmark -->
+            <a href="#" class="flex items-center gap-3.5 group logo-container">
+                <div class="relative w-14 h-14 flex items-center justify-center animate-pulse-glow">
+                    <svg viewBox="0 0 100 100" class="w-full h-full overflow-visible"
+                        aria-label="Nicanly Equipment Wholesaling Emblem">
+                        <!-- Outer Spinning Gear Teeth -->
+                        <g class="animate-spin-slow" id="gear-teeth"></g>
+
+                        <!-- Main Dark Circle & Inner Orange Ring -->
+                        <circle cx="50" cy="50" r="37" fill="#181A20" stroke="#C8640A" stroke-width="2.5" />
+                        <circle cx="50" cy="50" r="33" fill="none" stroke="#C8640A" stroke-width="1"
+                            stroke-dasharray="4 2" opacity="0.6" />
+
+                        <!-- Excavator Cab & Body -->
+                        <rect x="33" y="40" width="16" height="13" rx="1.5" fill="#C8640A" />
+                        <rect x="35.5" y="42.5" width="10" height="6" rx="1" fill="#FFFFFF" />
+
+                        <!-- Animated Excavator Boom & Bucket -->
+                        <g class="excavator-arm">
+                            <path d="M47 45 L58 34 L61 36 L49 48 Z" fill="#C8640A" />
+                            <line x1="46" y1="41" x2="54" y2="33" stroke="#E87A14" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M57 35 L66 49 L62 51 L55 37 Z" fill="#C8640A" />
+                            <path d="M62 49 L70 49 L68 56 L60 54 Z" fill="#E87A14" />
+                        </g>
+
+                        <!-- Crawler Tracks -->
+                        <rect x="30" y="55" width="35" height="5.5" rx="2.5" fill="#C8640A" />
+                        <line x1="35" y1="55" x2="35" y2="60.5" stroke="#181A20" stroke-width="1.5" />
+                        <line x1="41" y1="55" x2="41" y2="60.5" stroke="#181A20" stroke-width="1.5" />
+                        <line x1="47" y1="55" x2="47" y2="60.5" stroke="#181A20" stroke-width="1.5" />
+                        <line x1="53" y1="55" x2="53" y2="60.5" stroke="#181A20" stroke-width="1.5" />
+                        <line x1="59" y1="55" x2="59" y2="60.5" stroke="#181A20" stroke-width="1.5" />
+
+                        <!-- Micro Text Inside Logo Circle -->
+                        <text x="50" y="68" text-anchor="middle" fill="#E87A14" font-family="Chakra Petch"
+                            font-weight="700" font-size="6.5" letter-spacing="0.5">NICANLY</text>
+                        <text x="50" y="73.5" text-anchor="middle" fill="#D1D5DB" font-family="Inter" font-weight="600"
+                            font-size="3.5" letter-spacing="0.3">EQUIPMENT</text>
+                        <text x="50" y="78" text-anchor="middle" fill="#D1D5DB" font-family="Inter" font-weight="600"
+                            font-size="3.5" letter-spacing="0.3">WHOLESALING</text>
+                    </svg>
+                </div>
+                <div>
+                    <span
+                        class="block font-display text-lg sm:text-xl font-bold tracking-wider text-white group-hover:text-nicanly-amber transition-colors">
+                        NICANLY <span class="text-nicanly-amber">EQUIPMENT</span>
+                    </span>
+                    <span class="block text-[11px] uppercase tracking-[0.25em] text-gray-400 font-semibold">
+                        WHOLESALING &amp; BULK SUPPLY
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#catalog" class="nav-link">Wholesale Products</a>
+                <a href="#procurement" class="nav-link">How to Order</a>
+                <a href="#order-portal" class="nav-link">Direct Order Form</a>
+                <button
+                    onclick="quickSelectOrder('Solar Panels & LED Street Lights Bulk Inquiry', 'General Bulk Pricing Inquiry', 10)"
+                    class="btn-primary px-5 py-2.5 rounded-xl text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Order Now</span>
+                </button>
+            </nav>
+
+            <!-- Mobile Action Button -->
+            <div class="md:hidden">
+                <a href="#order-portal" class="btn-primary px-4 py-2 rounded-lg text-xs flex items-center gap-1.5">
+                    <i class="fa-solid fa-paper-plane"></i> Order
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 lg:py-24 overflow-hidden border-b border-white/10">
+        <!-- Ambient Background Lighting -->
+        <div
+            class="absolute -top-28 -right-28 w-96 h-96 bg-nicanly-orange/15 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div
+            class="absolute -bottom-28 -left-28 w-96 h-96 bg-nicanly-amber/10 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column: Value Proposition -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h1
+                        class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]">
+                        QUALITY <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-nicanly-amber via-nicanly-gold to-nicanly-orange">SOLAR
+                            PANELS &amp; LED STREET LIGHTS</span> AT WHOLESALE SCALE.
+                    </h1>
+
+                    <p class="text-gray-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+                        Supplying contractors, hardware stores, community projects, and bulk buyers. Source durable
+                        solar panels and high-brightness LED street lights with simple, direct ordering straight to our
+                        Gmail desk.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#catalog"
+                            class="btn-primary px-7 py-4 rounded-xl text-sm sm:text-base flex items-center gap-3">
+                            <i class="fa-solid fa-solar-panel"></i>
+                            <span>View Solar &amp; LED Products</span>
+                        </a>
+                        <a href="#order-portal"
+                            class="btn-secondary px-7 py-4 rounded-xl text-sm sm:text-base flex items-center gap-3">
+                            <i class="fa-solid fa-envelope-open-text text-nicanly-amber"></i>
+                            <span>Go to Order Form</span>
+                        </a>
+                    </div>
+
+                    <!-- Simple Key Highlights (No business paperwork claims) -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/10 max-w-xl">
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-bold text-white">Bulk</div>
+                            <div class="text-xs text-gray-400 mt-0.5">Wholesale Pricing</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-bold text-nicanly-amber">&lt; 24h</div>
+                            <div class="text-xs text-gray-400 mt-0.5">Email Reply Time</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl sm:text-3xl font-bold text-white">8AM–8PM</div>
+                            <div class="text-xs text-gray-400 mt-0.5">Daily Active Hours</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Corporate Emblem & Direct Dispatch Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="hero-emblem-card w-full max-w-md p-8 rounded-3xl text-center animate-float">
+                        <div class="flex items-center justify-between text-xs font-mono mb-2">
+                            <span class="text-gray-400">NICANLY WHOLESALE</span>
+                            <span
+                                class="text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/30 flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                ACCEPTING ORDERS
+                            </span>
+                        </div>
+
+                        <!-- Large Interactive SVG Emblem -->
+                        <div class="w-44 h-44 mx-auto my-4 relative flex items-center justify-center logo-container cursor-pointer"
+                            onclick="quickSelectOrder('Solar Panels & LED Street Lights Bulk Order', 'Custom Bulk Order', 10)"
+                            title="Click to start a Bulk Order">
+                            <svg viewBox="0 0 100 100"
+                                class="w-full h-full overflow-visible drop-shadow-[0_0_25px_rgba(200,100,10,0.4)]">
+                                <g class="animate-spin-slow" id="hero-gear-teeth"></g>
+                                <circle cx="50" cy="50" r="37" fill="#14171D" stroke="#C8640A" stroke-width="2.5" />
+                                <circle cx="50" cy="50" r="33.5" fill="none" stroke="#E87A14" stroke-width="0.8" />
+                                <!-- Excavator Graphic -->
+                                <rect x="33" y="40" width="16" height="13" rx="1.5" fill="#C8640A" />
+                                <rect x="35.5" y="42.5" width="10" height="6" rx="1" fill="#FFFFFF" />
+                                <g class="excavator-arm">
+                                    <path d="M47 45 L58 34 L61 36 L49 48 Z" fill="#C8640A" />
+                                    <line x1="46" y1="41" x2="54" y2="33" stroke="#F59E0B" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M57 35 L66 49 L62 51 L55 37 Z" fill="#C8640A" />
+                                    <path d="M62 49 L70 49 L68 56 L60 54 Z" fill="#F59E0B" />
+                                </g>
+                                <rect x="30" y="55" width="35" height="5.5" rx="2.5" fill="#C8640A" />
+                                <text x="50" y="68" text-anchor="middle" fill="#E87A14" font-family="Chakra Petch"
+                                    font-weight="700" font-size="6.5" letter-spacing="0.6">NICANLY</text>
+                                <text x="50" y="73.5" text-anchor="middle" fill="#FFFFFF" font-family="Inter"
+                                    font-weight="600" font-size="3.5" letter-spacing="0.4">EQUIPMENT</text>
+                                <text x="50" y="78" text-anchor="middle" fill="#FFFFFF" font-family="Inter"
+                                    font-weight="600" font-size="3.5" letter-spacing="0.4">WHOLESALING</text>
+                            </svg>
+                        </div>
+
+                        <h2 class="font-display text-xl font-bold text-white tracking-wide">
+                            NICANLY EQUIPMENT WHOLESALING
+                        </h2>
+                        <p class="text-xs text-nicanly-amber font-medium uppercase tracking-widest mt-1 mb-6">
+                            Solar Panels &amp; LED Street Lights
+                        </p>
+
+                        <!-- Direct Order Desk Summary Pills -->
+                        <div class="space-y-3 text-left text-sm">
+                            <a href="mailto:nicanlywholesale@gmail.com"
+                                class="flex items-center gap-3.5 bg-black/45 hover:bg-black/65 p-3.5 rounded-xl border border-white/10 hover:border-nicanly-orange/50 transition-all">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-nicanly-orange/20 text-nicanly-amber flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                </div>
+                                <div class="truncate">
+                                    <div class="text-[11px] text-gray-400 uppercase tracking-wider">Direct Gmail Order
+                                        Desk</div>
+                                    <div class="font-semibold text-white truncate">nicanlywholesale@gmail.com</div>
+                                </div>
+                            </a>
+                            <div class="flex items-center gap-3.5 bg-black/45 p-3.5 rounded-xl border border-white/10">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-nicanly-orange/20 text-nicanly-amber flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <div class="text-[11px] text-gray-400 uppercase tracking-wider">Active Hours</div>
+                                    <div class="font-semibold text-gray-200">8 AM to 8 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wholesale Catalog Section (Strictly Solar Panels & LED Street Lights) -->
+    <section id="catalog" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+            <div>
+                <div
+                    class="inline-flex items-center gap-2 text-nicanly-amber font-display text-xs uppercase tracking-widest font-bold mb-2">
+                    <i class="fa-solid fa-solar-panel"></i>
+                    <span>Available Products</span>
+                </div>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">
+                    WHOLESALE PRODUCT CATALOG
+                </h2>
+                <p class="text-sm text-gray-400 mt-1">
+                    Select a product below to automatically fill out the order form.
+                </p>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap gap-2" id="catalog-filters">
+                <button class="filter-btn active" onclick="filterCatalog('all', this)">All Products (2)</button>
+                <button class="filter-btn" onclick="filterCatalog('Solar Panels', this)">Solar Panels</button>
+                <button class="filter-btn" onclick="filterCatalog('LED Street Lights', this)">LED Street Lights</button>
+            </div>
+        </div>
+
+        <!-- Dynamic Catalog Grid (2 Columns for the 2 Active Product Lines) -->
+        <div class="grid md:grid-cols-2 gap-8" id="catalog-grid">
+            <!-- Populated via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Simple 3-Step Ordering Process (No business papers required) -->
+    <section id="procurement" class="py-16 border-t border-white/10 bg-black/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-nicanly-amber font-display text-xs uppercase tracking-widest font-bold">Fast &amp;
+                    Simple Ordering</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">
+                    HOW WHOLESALE ORDERING WORKS
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base mt-2">
+                    No complicated paperwork required. Place your order request in seconds and coordinate directly with
+                    us.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Step 1 -->
+                <div class="process-card p-7">
+                    <div class="flex items-center justify-between mb-5">
+                        <span
+                            class="w-12 h-12 rounded-xl bg-nicanly-orange/15 border border-nicanly-orange/40 text-nicanly-amber font-display font-bold text-lg flex items-center justify-center">
+                            01
+                        </span>
+                        <i class="fa-solid fa-hand-pointer text-2xl text-gray-600"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white">Choose Your Product</h3>
+                    <p class="text-sm text-gray-400 mt-2 leading-relaxed">
+                        Select <strong>Solar Panels</strong> or <strong>LED Street Lights</strong> from the catalog
+                        above, enter your quantity, and send your order to <strong
+                            class="text-gray-200">nicanlywholesale@gmail.com</strong>.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-card p-7">
+                    <div class="flex items-center justify-between mb-5">
+                        <span
+                            class="w-12 h-12 rounded-xl bg-nicanly-orange/15 border border-nicanly-orange/40 text-nicanly-amber font-display font-bold text-lg flex items-center justify-center">
+                            02
+                        </span>
+                        <i class="fa-solid fa-comments text-2xl text-gray-600"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white">Direct Price &amp; Stock Reply</h3>
+                    <p class="text-sm text-gray-400 mt-2 leading-relaxed">
+                        We reply directly to your email or phone during our active hours (8 AM to 8 PM) to confirm bulk
+                        pricing, available stock, and delivery or pickup details.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-card p-7">
+                    <div class="flex items-center justify-between mb-5">
+                        <span
+                            class="w-12 h-12 rounded-xl bg-nicanly-orange/15 border border-nicanly-orange/40 text-nicanly-amber font-display font-bold text-lg flex items-center justify-center">
+                            03
+                        </span>
+                        <i class="fa-solid fa-truck-fast text-2xl text-gray-600"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white">Pickup or Delivery</h3>
+                    <p class="text-sm text-gray-400 mt-2 leading-relaxed">
+                        Once confirmed, your Solar Panels or LED Street Lights are prepared for warehouse pickup or
+                        dispatched straight to your location.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Wholesale Order Portal -->
+    <section id="order-portal" class="py-20 bg-nicanly-charcoal/50 border-t border-nicanly-orange/30 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-start">
+
+                <!-- Left Column: Contact Details -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-nicanly-amber font-display text-xs uppercase tracking-widest font-bold">Direct
+                            Ordering</span>
+                        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-1">
+                            WHOLESALE ORDER DESK
+                        </h2>
+                        <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                            Fill out the form to send your Solar Panel or LED Street Light order directly to our Gmail
+                            inbox.
+                        </p>
+                    </div>
+
+                    <!-- Direct Receiving Gmail Card -->
+                    <div class="bg-nicanly-dark p-5 rounded-2xl border border-nicanly-orange/40 shadow-lg">
+                        <div class="flex items-center gap-3.5">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-nicanly-orange/20 border border-nicanly-orange/40 flex items-center justify-center text-nicanly-amber text-xl shrink-0">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <span
+                                    class="block text-[11px] font-display uppercase tracking-wider text-nicanly-amber font-bold">
+                                    Receiving Order Gmail
+                                </span>
+                                <a href="mailto:nicanlywholesale@gmail.com"
+                                    class="block font-mono text-base sm:text-lg font-bold text-white hover:text-nicanly-amber transition-colors truncate">
+                                    nicanlywholesale@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Warehouse & Direct Bulk Hotline Cards -->
+                    <div class="space-y-4">
+                        <div class="bg-nicanly-dark/90 p-5 rounded-2xl border border-white/10 flex items-start gap-4">
+                            <div
+                                class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-nicanly-amber text-lg shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-white text-base">Active Hours</h3>
+                                <p class="text-sm text-gray-400 mt-0.5">Solar Panel &amp; LED Street Light Wholesale
+                                    Desk</p>
+                                <p class="text-xs text-nicanly-amber mt-1.5 font-medium">
+                                    8 AM to 8 PM
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-nicanly-dark/90 p-5 rounded-2xl border border-white/10 flex items-start gap-4">
+                            <div
+                                class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-nicanly-amber text-lg shrink-0">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-white text-base">Direct Bulk</h3>
+                                <p class="text-sm text-gray-300 font-medium mt-0.5" id="bulk-phone-display">BULK PHONE
+                                    HOLDER</p>
+                                <p class="text-xs text-gray-400 mt-1">Call or message during Active Hours (8 AM to 8 PM)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Wholesale Order Form -->
+                <div class="lg:col-span-7">
+                    <div id="order-form-card" class="order-portal-card p-6 sm:p-9 rounded-3xl transition-all">
+                        <div
+                            class="flex flex-wrap items-center justify-between gap-3 pb-5 mb-6 border-b border-white/10">
+                            <div>
+                                <div class="flex items-center gap-2.5">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                    <h3 class="font-display text-xl sm:text-2xl font-bold text-white">DIRECT WHOLESALE
+                                        ORDER FORM</h3>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">
+                                    Sends directly to <span
+                                        class="text-gray-200 font-medium">nicanlywholesale@gmail.com</span>
+                                </p>
+                            </div>
+                            <span id="auto-fill-badge"
+                                class="hidden text-xs bg-nicanly-orange/20 text-nicanly-amber border border-nicanly-orange/40 px-3.5 py-1.5 rounded-full font-semibold">
+                                <i class="fa-solid fa-check-double mr-1"></i> Product Selected
+                            </span>
+                        </div>
+
+                        <form id="wholesale-form" onsubmit="handleOrderSubmit(event)" class="space-y-5">
+                            <!-- Selected Product & Quantity Row -->
+                            <div class="grid sm:grid-cols-4 gap-4">
+                                <div class="sm:col-span-3">
+                                    <label for="order-item" class="form-label">Selected Product *</label>
+                                    <input type="text" id="order-item" name="Product_Ordered" required
+                                        value="Solar Panels" class="form-input font-medium">
+                                </div>
+                                <div>
+                                    <label for="order-qty" class="form-label">Quantity (Units) *</label>
+                                    <input type="number" id="order-qty" name="Quantity" min="1" value="10" required
+                                        class="form-input text-nicanly-amber font-bold text-center sm:text-left">
+                                </div>
+                            </div>
+
+                            <!-- Customer Details Row -->
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="buyer-name" class="form-label">Your Name / Store Name *</label>
+                                    <input type="text" id="buyer-name" name="Buyer_Name" required
+                                        placeholder="Enter your name" class="form-input">
+                                </div>
+                                <div>
+                                    <label for="buyer-contact" class="form-label">Your Email or Phone Number *</label>
+                                    <input type="text" id="buyer-contact" name="Buyer_Contact" required
+                                        placeholder="your@email.com or phone number" class="form-input">
+                                </div>
+                            </div>
+
+                            <!-- Delivery / Pickup Preference -->
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="freight-mode" class="form-label">Delivery or Pickup</label>
+                                    <select id="freight-mode" name="Delivery_Preference" class="form-input">
+                                        <option value="Delivery to Location">Delivery to Location</option>
+                                        <option value="Customer Pickup">Customer Pickup</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="delivery-location" class="form-label">Delivery Address / City *</label>
+                                    <input type="text" id="delivery-location" name="Location" required
+                                        placeholder="Enter your city or delivery address" class="form-input">
+                                </div>
+                            </div>
+
+                            <!-- Order Notes -->
+                            <div>
+                                <label for="order-notes" class="form-label">Order Notes / Message</label>
+                                <textarea id="order-notes" name="Order_Notes" rows="3"
+                                    class="form-input">Hello, I would like to place a wholesale order and check the total price and delivery schedule.</textarea>
+                            </div>
+
+                            <!-- Primary & Secondary Dispatch Actions -->
+                            <div class="pt-2 space-y-3">
+                                <button type="submit" id="submit-btn"
+                                    class="w-full btn-primary text-base py-4 px-6 rounded-xl flex items-center justify-center gap-3">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>SEND ORDER TO GMAIL</span>
+                                </button>
+
+                                <div class="flex items-center justify-between gap-4 pt-1">
+                                    <span class="text-[11px] text-gray-500">
+                                        Prefer sending from your own Gmail tab?
+                                    </span>
+                                    <button type="button" onclick="openDirectGmailCompose()"
+                                        class="text-xs text-nicanly-amber hover:text-nicanly-gold font-medium flex items-center gap-1.5 transition-colors">
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                        <span>Open Pre-Filled Order in Gmail Web</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Status Feedback Box -->
+                            <div id="status-message" class="hidden rounded-2xl p-4 text-sm border"></div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-nicanly-dark border-t border-white/10 pt-14 pb-10 text-sm text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-12 gap-8 pb-10 border-b border-white/10">
+                <!-- Col 1: Brand Info -->
+                <div class="md:col-span-5 space-y-3">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-3 h-3 rounded-sm bg-nicanly-orange"></span>
+                        <span class="font-display font-bold text-lg text-white tracking-wider">NICANLY EQUIPMENT
+                            WHOLESALING</span>
+                    </div>
+                    <p class="text-xs text-gray-400 max-w-sm leading-relaxed">
+                        Wholesale supplier of Solar Panels and LED Street Lights for bulk buyers, contractors, and
+                        community projects.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="md:col-span-3 space-y-2 text-xs">
+                    <div class="font-display font-bold text-white uppercase tracking-wider mb-3">Available Products
+                    </div>
+                    <div>
+                        <a href="#catalog"
+                            onclick="quickSelectOrder('Solar Panels', 'High-Efficiency Solar Panels • Weatherproof Aluminum Frame', 10)"
+                            class="hover:text-nicanly-amber transition-colors">
+                            Solar Panels
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#catalog"
+                            onclick="quickSelectOrder('LED Street Lights', 'Heavy-Duty Outdoor LED Street Lights • High-Brightness Roadway & Street Lighting', 10)"
+                            class="hover:text-nicanly-amber transition-colors">
+                            LED Street Lights
+                        </a>
+                    </div>
+                    <div><a href="#order-portal" class="hover:text-nicanly-amber transition-colors">Direct Order
+                            Form</a></div>
+                </div>
+
+                <!-- Col 3: Direct Wholesale Desk -->
+                <div class="md:col-span-4 space-y-2 text-xs">
+                    <div class="font-display font-bold text-white uppercase tracking-wider mb-3">Contact &amp; Active
+                        Hours</div>
+                    <div class="flex items-center gap-2 text-gray-300">
+                        <i class="fa-solid fa-envelope text-nicanly-amber"></i>
+                        <a href="mailto:nicanlywholesale@gmail.com"
+                            class="hover:text-nicanly-amber transition-colors font-mono">nicanlywholesale@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-300">
+                        <i class="fa-solid fa-phone text-nicanly-amber"></i>
+                        <span id="footer-phone-display">BULK PHONE HOLDER</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <i class="fa-solid fa-clock text-nicanly-amber"></i>
+                        <span>Active Hours: 8 AM to 8 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+                <div class="flex items-center gap-4">
+                    <span>Solar Panels</span>
+                    <span>&bull;</span>
+                    <span>LED Street Lights</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Application Logic -->
+    <script>
+        // =========================================================================
+        // CONFIGURATION VARIABLES (Change your phone number & Gmail here)
+        // =========================================================================
+        const WHOLESALE_EMAIL = 'nicanlywholesale@gmail.com';
+        const BULK_PHONE_HOLDER = '+63 921 977 2057';
+
+        // 1. Render the 20 Sunburst / Gear Triangles around the SVG Logos
+        function renderLogoGearTeeth(groupId) {
+            const group = document.getElementById(groupId);
+            if (!group) return;
+            const numTeeth = 20;
+            let svgContent = '';
+            for (let i = 0; i < numTeeth; i++) {
+                const angle = (i * 360) / numTeeth;
+                svgContent += `<polygon points="50,5 46.2,11.5 53.8,11.5" fill="#C8640A" transform="rotate(${angle} 50 50)" />`;
+            }
+            group.innerHTML = svgContent;
+        }
+
+        // 2. Wholesale Catalog Data — Strictly Solar Panels & LED Street Lights
+        const catalogItems = [
+            {
+                id: 'NC-SOLAR',
+                name: 'Solar Panels',
+                category: 'Solar Panels',
+                moq: 'Available for Bulk & Wholesale Orders',
+                tierPrice: 'Direct Wholesale Rate',
+                defaultQty: 10,
+                icon: 'fa-solid fa-solar-panel',
+                specs: 'High-Efficiency Solar Panels • Durable Weather-Resistant Aluminum Frame • Ready for Home, Commercial & Off-Grid Installations'
+            },
+            {
+                id: 'NC-LED-SL',
+                name: 'LED Street Lights',
+                category: 'LED Street Lights',
+                moq: 'Available for Bulk & Wholesale Orders',
+                tierPrice: 'Direct Wholesale Rate',
+                defaultQty: 10,
+                icon: 'fa-solid fa-lightbulb',
+                specs: 'Heavy-Duty Outdoor LED Street Lights • Weatherproof Housing • High-Brightness Roadway, Parking & Community Lighting'
+            }
+        ];
+
+        // 3. Render Catalog Cards with Category Filtering
+        function renderCatalog(selectedCategory = 'all') {
+            const grid = document.getElementById('catalog-grid');
+            const filtered = selectedCategory === 'all'
+                ? catalogItems
+                : catalogItems.filter(item => item.category === selectedCategory);
+
+            grid.innerHTML = filtered.map(item => `
+                <div class="catalog-card p-7 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-5">
+                            <span class="text-xs font-mono uppercase tracking-wider px-3 py-1 rounded-md bg-nicanly-orange/15 text-nicanly-amber border border-nicanly-orange/30 font-semibold">
+                                ${item.category}
+                            </span>
+                            <span class="text-xs text-gray-400 font-mono">CODE: ${item.id}</span>
+                        </div>
+
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-14 h-14 rounded-2xl bg-nicanly-dark border border-nicanly-orange/40 flex items-center justify-center text-nicanly-amber text-2xl shrink-0 group-hover:scale-105 transition-transform">
+                                <i class="${item.icon}"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-2xl text-white group-hover:text-nicanly-amber transition-colors">
+                                    ${item.name}
+                                </h3>
+                                <p class="text-sm text-gray-400 mt-2 leading-relaxed">${item.specs}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-5 mt-5 border-t border-white/10">
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <span class="text-gray-300 font-medium">${item.moq}</span>
+                            <span class="font-semibold text-nicanly-amber">${item.tierPrice}</span>
+                        </div>
+
+                        <button onclick="quickSelectOrder('${item.name}', '${item.specs}', ${item.defaultQty})"
+                            class="catalog-order-btn w-full font-display font-bold text-sm py-3.5 px-5 rounded-xl flex items-center justify-center gap-2.5">
+                            <i class="fa-solid fa-cart-shopping text-nicanly-amber group-hover:text-white transition-colors"></i>
+                            <span>Press to Order ${item.name}</span>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterCatalog(category, btnElement) {
+            document.querySelectorAll('#catalog-filters .filter-btn').forEach(btn => btn.classList.remove('active'));
+            if (btnElement) btnElement.classList.add('active');
+            renderCatalog(category);
+        }
+
+        // 4. One-Click Auto-Fill Function
+        function quickSelectOrder(itemName, specs, defaultQty) {
+            const itemInput = document.getElementById('order-item');
+            const qtyInput = document.getElementById('order-qty');
+            const notesInput = document.getElementById('order-notes');
+            const badge = document.getElementById('auto-fill-badge');
+            const formCard = document.getElementById('order-form-card');
+
+            itemInput.value = itemName;
+            qtyInput.value = defaultQty;
+            notesInput.value = `Wholesale Order for ${defaultQty}x ${itemName}.\nDetails: ${specs}.\nPlease let me know the total bulk price and delivery details.`;
+
+            badge.classList.remove('hidden');
+            formCard.classList.remove('form-flash');
+            void formCard.offsetWidth; // trigger reflow
+            formCard.classList.add('form-flash');
+
+            document.getElementById('order-portal').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // 5. Status Message Helper
+        function showStatus(htmlContent, type) {
+            const box = document.getElementById('status-message');
+            box.classList.remove(
+                'hidden',
+                'bg-emerald-950/70', 'border-emerald-500/50', 'text-emerald-200',
+                'bg-amber-950/70', 'border-amber-500/50', 'text-amber-200',
+                'bg-red-950/70', 'border-red-500/50', 'text-red-200'
+            );
+
+            if (type === 'success') {
+                box.classList.add('bg-emerald-950/70', 'border-emerald-500/50', 'text-emerald-200');
+            } else if (type === 'info') {
+                box.classList.add('bg-amber-950/70', 'border-amber-500/50', 'text-amber-200');
+            } else {
+                box.classList.add('bg-red-950/70', 'border-red-500/50', 'text-red-200');
+            }
+            box.innerHTML = htmlContent;
+        }
+
+        // 6. Direct Gmail Web Compose Option
+        function openDirectGmailCompose() {
+            const item = document.getElementById('order-item').value.trim();
+            const qty = document.getElementById('order-qty').value.trim();
+            const buyerName = document.getElementById('buyer-name').value.trim() || 'Wholesale Buyer';
+            const buyerContact = document.getElementById('buyer-contact').value.trim() || 'Not specified';
+            const freightMode = document.getElementById('freight-mode').value;
+            const destination = document.getElementById('delivery-location').value.trim() || 'To be confirmed';
+            const notes = document.getElementById('order-notes').value.trim();
+
+            const orderRef = 'NC-' + Math.floor(100000 + Math.random() * 900000);
+            const subject = `[WHOLESALE ORDER ${orderRef}] ${qty}x ${item} — ${buyerName}`;
+            const body = [
+                `NICANLY EQUIPMENT WHOLESALING — ORDER REQUEST`,
+                `====================================================`,
+                `Order Reference: ${orderRef}`,
+                `Product Ordered: ${item}`,
+                `Order Quantity: ${qty} Unit(s)`,
+                ``,
+                `BUYER DETAILS`,
+                `----------------------------------------------------`,
+                `Name: ${buyerName}`,
+                `Contact Email / Phone: ${buyerContact}`,
+                `Delivery / Pickup: ${freightMode}`,
+                `Location: ${destination}`,
+                ``,
+                `ORDER NOTES`,
+                `----------------------------------------------------`,
+                notes
+            ].join('\n');
+
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(WHOLESALE_EMAIL)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        // 7. Handle Automatic Order Submission to nicanlywholesale@gmail.com
+        async function handleOrderSubmit(event) {
+            event.preventDefault();
+
+            const item = document.getElementById('order-item').value.trim();
+            const qty = document.getElementById('order-qty').value.trim();
+            const buyerName = document.getElementById('buyer-name').value.trim();
+            const buyerContact = document.getElementById('buyer-contact').value.trim();
+            const freightMode = document.getElementById('freight-mode').value;
+            const destination = document.getElementById('delivery-location').value.trim();
+            const notes = document.getElementById('order-notes').value.trim();
+            const submitBtn = document.getElementById('submit-btn');
+
+            const orderRef = 'NC-' + Math.floor(100000 + Math.random() * 900000);
+            const emailSubject = `[WHOLESALE ORDER ${orderRef}] ${qty}x ${item} - ${buyerName}`;
+
+            const originalBtnHTML = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> <span>SENDING ORDER TO ${WHOLESALE_EMAIL.toUpperCase()}...</span>`;
+
+            try {
+                const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(WHOLESALE_EMAIL)}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        _subject: emailSubject,
+                        Order_Reference: orderRef,
+                        Product_Ordered: item,
+                        Quantity: `${qty} Unit(s)`,
+                        Buyer_Name: buyerName,
+                        Buyer_Contact: buyerContact,
+                        Delivery_Preference: freightMode,
+                        Location: destination,
+                        Order_Notes: notes,
+                        _template: 'table'
+                    })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showStatus(`
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400 text-lg mt-0.5"></i>
+                            <div>
+                                <div class="font-bold text-white">Order ${orderRef} Sent!</div>
+                                <p class="text-xs mt-1 text-emerald-200 leading-relaxed">
+                                    Your order has been sent to <strong>${WHOLESALE_EMAIL}</strong>. We will get back to you during our active hours (8 AM to 8 PM).
+                                </p>
+                            </div>
+                        </div>
+                    `, 'success');
+                } else {
+                    throw new Error(result.message || 'Relay requires verification');
+                }
+            } catch (err) {
+                showStatus(`
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope-circle-check text-amber-400 text-lg mt-0.5"></i>
+                        <div>
+                            <div class="font-bold text-white">Send Directly via Gmail (${orderRef})</div>
+                            <p class="text-xs mt-1 text-amber-200 leading-relaxed">
+                                Click below to send your pre-filled order directly to <strong>${WHOLESALE_EMAIL}</strong> in Gmail:
+                            </p>
+                            <button type="button" onclick="openDirectGmailCompose()" class="mt-2.5 inline-flex items-center gap-2 bg-nicanly-orange hover:bg-nicanly-amber text-white font-display font-bold text-xs px-4 py-2 rounded-lg transition-colors">
+                                <i class="fa-solid fa-paper-plane"></i> Open &amp; Send in Gmail Now
+                            </button>
+                        </div>
+                    </div>
+                `, 'info');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHTML;
+            }
+        }
+
+        // Initialize on DOM Content Loaded
+        window.addEventListener('DOMContentLoaded', () => {
+            // Apply BULK_PHONE_HOLDER variable to the page
+            const bulkPhoneEl = document.getElementById('bulk-phone-display');
+            const footerPhoneEl = document.getElementById('footer-phone-display');
+            if (bulkPhoneEl) bulkPhoneEl.textContent = BULK_PHONE_HOLDER;
+            if (footerPhoneEl) footerPhoneEl.textContent = BULK_PHONE_HOLDER;
+
+            renderLogoGearTeeth('gear-teeth');
+            renderLogoGearTeeth('hero-gear-teeth');
+            renderCatalog('all');
+        });
+    </script>
+</body>
+
+</html>
